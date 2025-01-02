@@ -53,14 +53,15 @@ local Window = Rayfield:CreateWindow({
  })
 
   local Toggle = MainTab:CreateToggle({
-    Name = "Auto Attack",
+    Name = "AIMLOCK",
     CurrentValue = false,
-    Flag = "Toggle1",
+    Flag = "Toggle2",
     callback = function(value)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Aepione/Prensado/refs/heads/main/Prensado%20camlock"))()
     end,
  })
 
+ local MainTab = Window:CreateTab("Misc", nil)
  local MainSection = MainTab:CreateSection("Meun")
  local Slider = Tab:CreateSlider({
     Name = "SPEED",
