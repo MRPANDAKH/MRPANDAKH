@@ -34,9 +34,16 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local PlayerTab = Window:CreateTab("Player", 4483362458)
+ local MainTab = Window:CreateTab("Main", nil)
+ local MainSection = Tab:CreateSection("Main")
+ Rayfield:Notify({
+   Title = "You are excuted script",
+   Content = "Very well",
+   Duration = 5,
+   Image = nil,
+})
 
- local Toggle = Tab:CreateToggle({
+ local Toggle = MainTab:CreateToggle({
     Name = "Auto Attack",
     CurrentValue = false,
     Flag = "Toggle1",
@@ -45,6 +52,16 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+  local Toggle = MainTab:CreateToggle({
+    Name = "Auto Attack",
+    CurrentValue = false,
+    Flag = "Toggle1",
+    callback = function(value)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Aepione/Prensado/refs/heads/main/Prensado%20camlock"))()
+    end,
+ })
+
+ local MainSection = MainTab:CreateSection("Meun")
  local Slider = Tab:CreateSlider({
     Name = "SPEED",
     Range = {10, 100},
