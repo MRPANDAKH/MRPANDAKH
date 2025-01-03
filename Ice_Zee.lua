@@ -1,6 +1,6 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Nakato = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 -- It is recommended to use something unique as other scripts using Rayfie
-local Window = Rayfield:CreateWindow({
+local Window = Nakato:CreateWindow({
     Name = "Ice_Zee HUB",
     Icon = 0, 
     LoadingTitle = "Ice_Zee HUB",
